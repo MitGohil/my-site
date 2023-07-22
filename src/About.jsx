@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "./CM-cmp/Header";
-import "./About.css"
 
 function About() {
     return (

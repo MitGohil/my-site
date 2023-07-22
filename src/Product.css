@@ -21,8 +21,7 @@ img {
 
 #page {
 	width: 70%;
-	margin: 90px auto;
-	padding: 90px 0;
+	margin: 20px auto;
 }
 
 .content {
@@ -58,7 +57,6 @@ a:hover {
 	opacity: .1;
 }
 
-/* Style product */
 .product-items {
 	width: 100%;
 }
