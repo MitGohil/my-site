@@ -4,8 +4,8 @@ import { Route, Routes } from "react-router-dom";
 import Classcompomenu from "./Classcompomenu";
 import ClasscompoIntro from "./ClasscompoIntro";
 import Classcompojsx from "./Classcompojsx";
-import Classcompostate from "./Classcompostate";
 import Classcompoprop from "./Classcompoprop";
+import Classcompostate from "./Classcompostate";
 
 
 class Classcomporoutes extends Component {
