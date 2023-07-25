@@ -17,6 +17,9 @@ class Classcompomenu extends Component {
             <li>
               <Link to="Classcompostate" ><h4>Classcompostate</h4></Link>
             </li>
+            <li>
+              <Link to="Classcompoprop" ><h4>Classcompoprop</h4></Link>
+            </li>
           </ol>
         </div>
         <Outlet></Outlet>
