@@ -6,6 +6,7 @@ import ClasscompoIntro from "./ClasscompoIntro";
 import Classcompojsx from "./Classcompojsx";
 import Classcompoprop from "./Classcompoprop";
 import Classcompostate from "./Classcompostate";
+import Classconditionrendring from "./Classconditionrendring";
 
 
 class Classcomporoutes extends Component {
@@ -17,6 +18,7 @@ class Classcomporoutes extends Component {
                     <Route path="Classcompojsx" element={<Classcompojsx />} />
                     <Route path="Classcompostate" element={<Classcompostate />} />
                     <Route path="Classcompoprop" element={<Classcompoprop />} />
+                    <Route path="Classconditionrendring" element={<Classconditionrendring />} />
 
                 </Route>
             </Routes>
