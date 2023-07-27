@@ -2,16 +2,24 @@ import React from "react";
 import { Component } from "react";
 
 class Classcompojsx extends Component {
-    
 
+    changeDataDmFunction = () => {
+        console.log("called changeDataDmFunction");
+    }
     render() {
-        let a = 25
+        const koidata = "Something"
+        const changeData = () => {
+            console.log("called");
+        }
         return (
             <>
-                <h1>jsx</h1>
-                <h1>{a}</h1>
+                {koidata}
+                <p>Addition of 50+874 is {50 + 874} </p>
+                {/* <button onClick={changeData()}>Click</button> */}
+                <button onClick={changeData}>Click</button>
+                <button onClick={this.changeDataDmFunction}>Click</button>
             </>
-        )
+        );
     }
 }
 export default Classcompojsx
