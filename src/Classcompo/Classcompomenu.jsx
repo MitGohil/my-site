@@ -14,7 +14,7 @@ class Classcompomenu extends Component {
             <li>
               <Link to="Classcompojsx" ><h4>Classcompojsx</h4></Link>
             </li>
-            
+
             <li>
               <Link to="Classcompoprop" ><h4>Classcompoprop</h4></Link>
             </li>
@@ -23,6 +23,9 @@ class Classcompomenu extends Component {
             </li>
             <li>
               <Link to="Classconditionrendring" ><h4>Classconditionrendring</h4></Link>
+            </li>
+            <li>
+              <Link to="Classcompouncontrolld" ><h4>Classcompouncontrolld</h4></Link>
             </li>
           </ol>
         </div>
