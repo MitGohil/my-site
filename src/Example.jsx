@@ -8,14 +8,14 @@ const Example = () => {
         <h1 className="text-center">
           Example of Class component and Function Component
         </h1>
-        <div className="row">
-          <div className="col-6 text-center">
-            <h3>
+        <div className="row mt-1  bg-info bg-opacity-10 bg-gradient text-center">
+          <div className="col">
+            <h3 className="text-center">
               <Link to="/Example/Classcompo"> Class Component</Link>
             </h3>
           </div>
-          <div className="col-6 ">
-            <h3>
+          <div className="col">
+            <h3 className="text-center">
               <Link to="/Example/Functionalcompo">Functional Component</Link>
             </h3>
           </div>
