@@ -9,6 +9,7 @@ import Classcompostate from "./Classcompostate";
 import Classconditionrendring from "./Classconditionrendring";
 import Classcompouncontrolld from "./Classcompouncontrolld";
 import Classcompocontrolld from "./Classcompocontrolld";
+import Classlistandkey from "./Classlistandkey";
 
 
 class Classcomporoutes extends Component {
@@ -23,6 +24,7 @@ class Classcomporoutes extends Component {
                     <Route path="Classconditionrendring" element={<Classconditionrendring />} />
                     <Route path="Classcompouncontrolld" element={<Classcompouncontrolld />} />
                     <Route path="Classcompocontrolld" element={<Classcompocontrolld />} />
+                    <Route path="Classlistandkey" element={<Classlistandkey />} />
 
                 </Route>
             </Routes>

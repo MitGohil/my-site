@@ -17,7 +17,7 @@ class Classconditionrendring extends Component {
         this.setState({ theme: "light" })
     }
     toggleTheme = () => {
-        if (this.state.theme == "dark") {
+        if (this.state.theme === "dark") {
 
             this.setState({ theme: "light" })
         } else {
@@ -70,7 +70,7 @@ class Classconditionrendring extends Component {
         // return this.state.islogin && <div>                <h1>Welcome Home</h1>            </div>
 
         let ThemeDarkData = ""
-        if (this.state.theme == "dark") {
+        if (this.state.theme === "dark") {
             ThemeDarkData = <div className="dark">This will display dark theme data</div>
         } else {
             ThemeDarkData = <div className="light">This will display light theme data</div>
@@ -88,14 +88,14 @@ class Classconditionrendring extends Component {
                 <div className="conditional">
                     <h2>inside html render return </h2>
                     <p>if we want to perform some data according condition that time we need to adopt trnary operator ? :</p>
-                    {(this.state.theme == 'dark') ? "data" : "else"}
-                    {(this.state.theme == 'dark') ? <> my division data </> : <> my section data </>}
+                    {(this.state.theme === 'dark') ? "data" : "else"}
+                    {(this.state.theme === 'dark') ? <> my division data </> : <> my section data </>}
                 </div>
 
                 <h2>Load data from render before return condition</h2>
                 {ThemeDarkData}
 
-                <div className="dark" style={(this.state.theme == 'dark') ? { backgroundColor: "grey", color: "white" } : {}} >This will change</div>
+                <div className="dark" style={(this.state.theme === 'dark') ? { backgroundColor: "grey", color: "white" } : {}} >This will change</div>
             </>
         )
 
