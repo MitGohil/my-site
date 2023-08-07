@@ -10,6 +10,7 @@ import Classconditionrendring from "./Classconditionrendring";
 import Classcompouncontrolld from "./Classcompouncontrolld";
 import Classcompocontrolld from "./Classcompocontrolld";
 import Classlistandkey from "./Classlistandkey";
+import Stateliftingparent from "./Statelifting/Stateliftingparent";
 
 
 class Classcomporoutes extends Component {
@@ -25,6 +26,7 @@ class Classcomporoutes extends Component {
                     <Route path="Classcompouncontrolld" element={<Classcompouncontrolld />} />
                     <Route path="Classcompocontrolld" element={<Classcompocontrolld />} />
                     <Route path="Classlistandkey" element={<Classlistandkey />} />
+                    <Route path="Stateliftingparent" element={<Stateliftingparent />} />
 
                 </Route>
             </Routes>
