@@ -11,6 +11,7 @@ import Classcompouncontrolld from "./Classcompouncontrolld";
 import Classcompocontrolld from "./Classcompocontrolld";
 import Classlistandkey from "./Classlistandkey";
 import Stateliftingparent from "./Statelifting/Stateliftingparent";
+import Classcompositionandinheritance from "./10Classcompositionandinheritance";
 
 
 class Classcomporoutes extends Component {
@@ -27,6 +28,7 @@ class Classcomporoutes extends Component {
                     <Route path="Classcompocontrolld" element={<Classcompocontrolld />} />
                     <Route path="Classlistandkey" element={<Classlistandkey />} />
                     <Route path="Stateliftingparent" element={<Stateliftingparent />} />
+                    <Route path="Classcompositionandinheritance" element={<Classcompositionandinheritance />} />
 
                 </Route>
             </Routes>
