@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Childcompoforclass from './Childcompoforclass';
-import ClasscompoIntro from './01ClasscompoIntro';
+import ClasscompoIntro from './ClasscompoIntro';
 
 class Classcompositionandinheritance extends Component {
     render() {

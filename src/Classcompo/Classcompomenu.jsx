@@ -18,6 +18,7 @@ class Classcompomenu extends Component {
             <li><Link to="Classlistandkey" ><h4>Classlistandkey</h4></Link></li>
             <li><Link to="Stateliftingparent" ><h4>Stateliftingparent</h4></Link></li>
             <li><Link to="Classcompositionandinheritance" ><h4>Classcompositionandinheritance</h4></Link></li>
+            <li><Link to="Classhoc" ><h4>Classhoc</h4></Link></li>
           </ol>
         </div>
         <Outlet></Outlet>

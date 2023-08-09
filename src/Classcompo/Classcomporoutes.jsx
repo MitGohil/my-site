@@ -12,7 +12,7 @@ import Classcompocontrolld from "./Classcompocontrolld";
 import Classlistandkey from "./Classlistandkey";
 import Stateliftingparent from "./Statelifting/Stateliftingparent";
 import Classcompositionandinheritance from "./10Classcompositionandinheritance";
-
+import Classhoc from "./HOC/Classhoc";
 
 class Classcomporoutes extends Component {
     render() {
@@ -29,6 +29,7 @@ class Classcomporoutes extends Component {
                     <Route path="Classlistandkey" element={<Classlistandkey />} />
                     <Route path="Stateliftingparent" element={<Stateliftingparent />} />
                     <Route path="Classcompositionandinheritance" element={<Classcompositionandinheritance />} />
+                    <Route path="Classhoc" element={<Classhoc />} />
 
                 </Route>
             </Routes>
