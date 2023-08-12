@@ -13,7 +13,7 @@ class Classcompositionandinheritance extends Component {
                     <h5>Gohil</h5>
                     <ClasscompoIntro /> {/* Also send file as a child using composition*/}
                 </Childcompoforclass>
-
+npm start
             </>
         );
     }
