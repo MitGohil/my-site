@@ -8,6 +8,7 @@ const Functionalcompomenu = () => {
                 <ol>
                     <li> <Link to="FunctionalcompoIntro"><h3>Functional compo Intro</h3></Link></li>
                     <li> <Link to="Usestate"><h3>Usestate</h3></Link></li>
+                    <li> <Link to="Functioncompoprops"><h3>Functioncompoprops</h3></Link></li>
                 </ol>
 
 
