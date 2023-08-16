@@ -5,6 +5,7 @@ import Functionalcompomenu from "./Functionalcompomenu";
 import FunctionalcompoIntro from "./01FunctionalcompoIntro";
 import Usestate from "./02Usestate";
 import Functioncompoprops from "./05Functioncompoprops";
+import Useeffect from "./06Useeffect";
 
 const Functionalcomporoutes = () => {
     return (
@@ -13,6 +14,7 @@ const Functionalcomporoutes = () => {
                 <Route path="FunctionalcompoIntro" element={<FunctionalcompoIntro />} />
                 <Route path="Usestate" element={<Usestate />} />
                 <Route path="Functioncompoprops" element={<Functioncompoprops />} />
+                <Route path="Useeffect" element={<Useeffect />} />
             </Route>
         </Routes>
     );
