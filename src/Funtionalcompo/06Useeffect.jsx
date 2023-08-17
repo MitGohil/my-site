@@ -14,9 +14,9 @@ const Useeffect = () => {
     // }, [count])
 
 
-    // useEffect(() => {
-    //     alert("Called use effect one more times")
-    // })
+    useEffect(() => {
+        alert("Called use effect one more times")
+    })
     return (
         <>
             <h1>Use effect</h1>
