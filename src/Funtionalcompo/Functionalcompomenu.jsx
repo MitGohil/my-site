@@ -11,6 +11,7 @@ const Functionalcompomenu = () => {
                     <li> <Link to="Functioncompoprops"><h3>Functioncompoprops</h3></Link></li>
                     <li> <Link to="Useeffect"><h3>Useeffect</h3></Link></li>
                     <li> <Link to="Uselayouteffect"><h3>Uselayouteffect</h3></Link></li>
+                    <li> <Link to="Usememo"><h3>Usememo</h3></Link></li>
                 </ol>
 
 
