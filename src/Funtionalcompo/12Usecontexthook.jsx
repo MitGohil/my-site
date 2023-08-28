@@ -13,7 +13,7 @@ const Usecontexthook = () => {
     }
     return (
         <>
-            <Fname.Provider value={"Mitesh" + " " + name + " " + userName.Name + " " + userName.age}>
+            <Fname.Provider value={"Mitesh" + name + " " + userName.Name + " " + userName.age}>
                 <Lname.Provider value={"Jaymeet"}>
                     <p>In Usecontext Hook, only two stage. creator and provider.</p>
                     <p><b>Send data from parent to any other component or component's child without tree</b></p>
