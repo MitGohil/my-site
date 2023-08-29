@@ -3,7 +3,7 @@ import CompoC from './12.1CompoC';
 
 
 const Fname = createContext()
-const Lname = createContext()
+const Lname = createContext()   
 
 const Usecontexthook = () => {
     const name = "Gohil"
