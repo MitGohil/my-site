@@ -16,6 +16,7 @@ const Functionalcompomenu = () => {
                     <li> <Link to="Useconntextone"><h3>Useconntextone</h3></Link></li>
                     <li> <Link to="Usecontexthook"><h3>Usecontexthook</h3></Link></li>
                     <li> <Link to="Usereducer"><h3>Usereducer</h3></Link></li>
+                    <li> <Link to="Usereducerparent"><h3>Usereducerparent</h3></Link></li>
                 </ol>
 
 

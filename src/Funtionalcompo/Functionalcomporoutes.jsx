@@ -12,6 +12,7 @@ import Usecallback from "./09Usecallback";
 import Useconntextone from "./11Usecontextone";
 import Usecontexthook from "./12Usecontexthook";
 import Usereducer from "./13Usereducer";
+import Usereducerparent from "./14Usereducerparent";
 
 const Functionalcomporoutes = () => {
     return (
@@ -27,6 +28,7 @@ const Functionalcomporoutes = () => {
                 <Route path="Useconntextone" element={<Useconntextone />} />
                 <Route path="Usecontexthook" element={<Usecontexthook />} />
                 <Route path="Usereducer" element={<Usereducer />} />
+                <Route path="Usereducerparent" element={<Usereducerparent />} />
             </Route>
         </Routes>
     );
