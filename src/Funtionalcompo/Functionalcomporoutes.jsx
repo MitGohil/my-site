@@ -14,6 +14,7 @@ import Usecontexthook from "./12Usecontexthook";
 import Usereducer from "./13Usereducer";
 import Usereducerparent from "./14Usereducerparent";
 import Useref from "./15Useref";
+import Api from "./16Api";
 
 const Functionalcomporoutes = () => {
     return (
@@ -31,6 +32,7 @@ const Functionalcomporoutes = () => {
                 <Route path="Usereducer" element={<Usereducer />} />
                 <Route path="Usereducerparent" element={<Usereducerparent />} />
                 <Route path="Useref" element={<Useref />} />
+                <Route path="Api" element={<Api />} />
             </Route>
         </Routes>
     );
