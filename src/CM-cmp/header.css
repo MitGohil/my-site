@@ -16,4 +16,11 @@
   -webkit-border-radius:25px;
   border-radius:25px;
 }
+.apicss{
+    width:200px;
+}
+.abc{
+    display : flex;
+
+}
 
