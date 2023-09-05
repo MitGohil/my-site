@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Apipost = () => {
 
@@ -8,6 +8,7 @@ const Apipost = () => {
     const [percentage, setPercentage] = useState("")
     const [mobile, setMobile] = useState("")
     const [address, setAddress] = useState("")
+    const [user, setUser] = useState([])
 
 
     function savedata() {
@@ -31,7 +32,7 @@ const Apipost = () => {
         }
         else {
             const data = { name, enrl, standard, percentage, mobile, address }
-            fetch("http://localhost:2022/posts", {
+            fetch("http://localhost:2020/students", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -43,6 +44,19 @@ const Apipost = () => {
                 })
             })
         }
+    }
+    useEffect(() => {
+        fetch("http://localhost:2020/students").then((data) => {
+            data.json().then((res) => {
+                // console.log(res);
+                setUser(res)
+            })
+        }, [])
+    }
+    )
+    const tablestyle = {
+        "border": "2px solid black",
+        "textAlign": 'center',
     }
     return (
         <>
@@ -103,6 +117,28 @@ const Apipost = () => {
                     </table>
                 </fieldset>
             </form>
+            <table border="1" width="70%" className='mx-auto' style={tablestyle}>
+                <tr>
+                    <td style={tablestyle}>name</td>
+                    <td style={tablestyle}>enrl</td>
+                    <td style={tablestyle}>standard</td>
+                    <td style={tablestyle}>percentage</td>
+                    <td style={tablestyle}>mobile</td>
+                    <td style={tablestyle}>address</td>
+                </tr>
+                {
+                    user.reverse().map((item) =>
+                        <tr style={tablestyle}>
+                            <td style={tablestyle}>{item.name}</td>
+                            <td style={tablestyle}>{item.enrl}</td>
+                            <td style={tablestyle}>{item.standard}</td>
+                            <td style={tablestyle}>{item.percentage}</td>
+                            <td style={tablestyle}>{item.mobile}</td>
+                            <td style={tablestyle}>{item.address}</td>
+                        </tr>
+                    )
+                }
+            </table>
         </>
     );
 }

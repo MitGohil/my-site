@@ -1,19 +1,22 @@
 {
-  "posts": [
+  "students": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "mitesh",
+      "enrl": "1",
+      "standard": "Graduate",
+      "percentage": "86",
+      "mobile": "6987569989",
+      "address": "wadhwan city",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "chetan",
+      "enrl": "2",
+      "standard": "MCA",
+      "percentage": "76",
+      "mobile": "9568799625",
+      "address": "Ahmedabad",
+      "id": 2
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
