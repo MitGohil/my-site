@@ -17,6 +17,24 @@
       "mobile": "9568799625",
       "address": "Ahmedabad",
       "id": 2
+    },
+    {
+      "name": "Jiyansh",
+      "enrl": "3",
+      "standard": "Nursery",
+      "percentage": "68",
+      "mobile": "6896556698",
+      "address": "wadhwan city",
+      "id": 3
+    },
+    {
+      "name": "Shailesh",
+      "enrl": "4",
+      "standard": "10th fail",
+      "percentage": "48",
+      "mobile": "6598763155",
+      "address": "wadhwan",
+      "id": 4
     }
   ]
 }

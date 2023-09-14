@@ -11,7 +11,7 @@ const Apipost = () => {
     const [user, setUser] = useState([])
 
 
-    function savedata() {
+    const savedata = () => {
         if (name === "") {
             alert("Please enter your name")
         }
@@ -45,15 +45,15 @@ const Apipost = () => {
             })
         }
     }
+
     useEffect(() => {
         fetch("http://localhost:2020/students").then((data) => {
             data.json().then((res) => {
                 // console.log(res);
                 setUser(res)
             })
-        }, [])
-    }
-    )
+        })
+    }, [])
     const tablestyle = {
         "border": "2px solid black",
         "textAlign": 'center',
@@ -68,51 +68,25 @@ const Apipost = () => {
                     <legend>Student Portal</legend>
                     <table cellPadding="10" border="2px" className='mx-auto' width="70%" >
                         <tr>
-                            <td>
-                                <label htmlFor="name">Name :- </label>
-                            </td>
-                            <td>
-                                <input type="text" name="" value={name} id="name" onChange={(e) => setName(e.target.value)} required />
-                            </td>
-                            <td>
-                                <label htmlFor="enrl">Enrollment No. :-</label>
-                            </td>
-                            <td>
-                                <input type="number" name="" value={enrl} id="enrl" onChange={(e) => setEnrl(e.target.value)} required />
-                            </td>
+                            <td><label htmlFor="name">Name :- </label></td>
+                            <td><input type="text" name="" value={name} id="name" onChange={(e) => setName(e.target.value)} required /></td>
+                            <td><label htmlFor="enrl">Enrollment No. :-</label></td>
+                            <td><input type="number" name="" value={enrl} id="enrl" onChange={(e) => setEnrl(e.target.value)} required /></td>
                         </tr>
                         <tr>
-                            <td>
-                                <label htmlFor="std">Standard :- </label>
-                            </td>
-                            <td>
-                                <input type="text" value={standard} name="" id="std" onChange={(e) => setStandard(e.target.value)} required />
-                            </td>
-                            <td>
-                                <label htmlFor="per">Percentage :- </label>
-                            </td>
-                            <td>
-                                <input type="number" name="" value={percentage} id="per" onChange={(e) => setPercentage(e.target.value)} required />
-                            </td>
+                            <td><label htmlFor="std">Standard :- </label></td>
+                            <td><input type="text" value={standard} name="" id="std" onChange={(e) => setStandard(e.target.value)} required /></td>
+                            <td><label htmlFor="per">Percentage :- </label></td>
+                            <td><input type="number" name="" value={percentage} id="per" onChange={(e) => setPercentage(e.target.value)} required /></td>
                         </tr>
                         <tr>
-                            <td>
-                                <label htmlFor="mo">Mobile No. :-  :- </label>
-                            </td>
-                            <td>
-                                <input type="tel" name="" maxLength="10" value={mobile} id="mo" onChange={(e) => setMobile(e.target.value)} required />
-                            </td>
-                            <td>
-                                <label htmlFor="add">Address :- </label>
-                            </td>
-                            <td>
-                                <input type="text" name="" value={address} id="add" onChange={(e) => setAddress(e.target.value)} required />
-                            </td>
+                            <td><label htmlFor="mo">Mobile No. :-  :- </label></td>
+                            <td><input type="tel" name="" maxLength="10" value={mobile} id="mo" onChange={(e) => setMobile(e.target.value)} required /></td>
+                            <td><label htmlFor="add">Address :- </label></td>
+                            <td><input type="text" name="" value={address} id="add" onChange={(e) => setAddress(e.target.value)} required /></td>
                         </tr>
                         <tr>
-                            <td colSpan="4">
-                                <input type="submit" value="SUBMIT" onClick={savedata} />
-                            </td>
+                            <td colSpan="4"><input type="submit" value="SUBMIT" onClick={savedata} /></td>
                         </tr>
                     </table>
                 </fieldset>

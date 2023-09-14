@@ -20,6 +20,7 @@ const Functionalcompomenu = () => {
                     <li> <Link to="Useref"><h3>Useref</h3></Link></li>
                     <li> <Link to="Api"><h3>Api</h3></Link></li>
                     <li> <Link to="Apipost"><h3>Apipost</h3></Link></li>
+                    <li> <Link to="Customhooks"><h3>Customhooks</h3></Link></li>
                 </ol>
 
 
