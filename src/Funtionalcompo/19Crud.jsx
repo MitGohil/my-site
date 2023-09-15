@@ -21,15 +21,15 @@ const Crud = () => {
         <>
             <div className='text-center' >
 
-                <input type="text" value={name} name="" id="" onChange={(e) => setName(e.target.value)} />
-                <button onClick={handleadd}>Add-Item</button>
+                <input className='m-2 p-3' type="text" value={name} name="" id="" onChange={(e) => setName(e.target.value)} />
+                <button className='m-2 p-4 btn btn-success' onClick={handleadd}>Add-Item</button>
             </div>
             {
                 alldata.map((data) =>
                     <div className='text-center'>
-                        <h1 >{data}</h1>
-                        <button >Edit</button>
-                        <button >Delete</button>
+                        <h1 className='fw-bold fst-italic text-decoration-underline'>{data}</h1>
+                        <button className='m-1 btn btn-info'>Edit</button>
+                        <button className='m-1 btn btn-info'>Delete</button>
                     </div>
 
                 )
