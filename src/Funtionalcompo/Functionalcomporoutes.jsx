@@ -17,6 +17,7 @@ import Useref from "./15Useref";
 import Api from "./16Api";
 import Apipost from "./17Apipost";
 import Customhooks from "./18Customhooks";
+import Crud from "./19Crud";
 
 const Functionalcomporoutes = () => {
     return (
@@ -37,6 +38,7 @@ const Functionalcomporoutes = () => {
                 <Route path="Api" element={<Api />} />
                 <Route path="Apipost" element={<Apipost />} />
                 <Route path="Customhooks" element={<Customhooks />} />
+                <Route path="Crud" element={<Crud />} />
             </Route>
         </Routes>
     );
