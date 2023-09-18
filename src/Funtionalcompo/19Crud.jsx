@@ -19,7 +19,12 @@ const Crud = () => {
             setName("")
         }
     }
-   
+    // Delete function
+    const handledel = (index) => {
+        // for delete data we use splice method
+        alldata.splice(index, 1)
+        setAlldata([...alldata])
+    }
 
     // Edit function
     const handleedit = (i) => {
@@ -56,7 +61,7 @@ const Crud = () => {
                             <tr>
                                 <td className='border'><h1 className='fw-bold fst-italic text-decoration-underline'>{data}</h1></td>
                                 <td className='border w-25  '><button className='m-1 btn btn-info' onClick={() => handleedit(i)}>Edit</button></td>
-                                <td className='border w-25  '><button className='m-1 btn btn-info'>Delete</button></td>
+                                <td className='border w-25  '><button className='m-1 btn btn-info' onClick={() => handledel(i)}>Delete</button></td>
                             </tr>
                         </table>
                     </div>
