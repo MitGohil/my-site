@@ -9,9 +9,11 @@ const Apipost = () => {
     const [mobile, setMobile] = useState("")
     const [address, setAddress] = useState("")
     const [user, setUser] = useState([])
+    const [sec, setSec] = useState(false)
 
 
-    const savedata = () => {
+
+    const savedata = (event) => {
         if (name === "") {
             alert("Please enter your name")
         }
@@ -43,7 +45,15 @@ const Apipost = () => {
 
                 })
             })
+            setName("");
+            setEnrl("");
+            setStandard("");
+            setPercentage("");
+            setMobile("");
+            setAddress("");
+            event.preventDefault()
         }
+        setSec(true)
     }
 
     useEffect(() => {
@@ -53,11 +63,8 @@ const Apipost = () => {
                 setUser(res)
             })
         })
-    }, [])
-    const tablestyle = {
-        "border": "2px solid black",
-        "textAlign": 'center',
-    }
+    }, [sec])
+   
     return (
         <>
             <h1>API post</h1>
